@@ -6,11 +6,10 @@
 class EmailParser 
   attr_accessor :emails
   def self.parse
-    @emails = self.split(',').split.(' ')
-    @emails.each do |email|
+    email_list = self.split(',').split.(' ')
+    result = email_list.each do |email|
       
     end
-    @emails
   end
   
 end
