@@ -6,6 +6,10 @@
 class EmailParser 
   attr_accessor :emails
   
+  def initialize(list)
+    @emails = list 
+  end
+  
   def self.parse
     email_list = self.split(',').split.(' ')
     email_list.uniq
