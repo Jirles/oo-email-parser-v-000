@@ -11,11 +11,12 @@ class EmailParser
   end
   
   def parse
-    if @emails.include?(',')
-      email_list = @emails.split(', ')
-    else
-      email_list = @emails.split(' ')
-    end
+    #if @emails.include?(',')
+    email_list = @emails.split(', ')
+    #else
+    email_list.each{
+    @emails.split(' ')
+    #end
     email_list.uniq
   end
   
