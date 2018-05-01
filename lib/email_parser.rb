@@ -10,8 +10,8 @@ class EmailParser
     @emails = list 
   end
   
-  def self.parse
-    email_list = self.split(',').split.(' ')
+  def parse
+    email_list = @emails.split(',').split.(' ')
     email_list.uniq
   end
   
