@@ -5,11 +5,10 @@
 
 class EmailParser 
   attr_accessor :emails
+  
   def self.parse
     email_list = self.split(',').split.(' ')
-    result = email_list.uniq{ do |email|}
-      
-    end
+    result = email_list.uniq{ |email| email }
   end
   
 end
