@@ -8,7 +8,7 @@ class EmailParser
   
   def self.parse
     email_list = self.split(',').split.(' ')
-    email_list.uniq{ |email| email }
+    email_list.uniq
   end
   
 end
