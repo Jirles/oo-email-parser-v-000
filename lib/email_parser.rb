@@ -7,7 +7,7 @@ class EmailParser
   attr_accessor :emails
   def self.parse
     email_list = self.split(',').split.(' ')
-    result = email_list.each do |email|
+    result = email_list.uniq{ do |email|}
       
     end
   end
