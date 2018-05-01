@@ -17,6 +17,7 @@ class EmailParser
     email_list = @emails.split(', ')
     #else
     email_list_wo_spaces = email_list.each{|email| email.split(' ')}
+    binding.pry 
     email_list_wo_spaces.flatten
     #end
     email_list_wo_spaces.uniq
