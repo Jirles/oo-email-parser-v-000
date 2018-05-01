@@ -24,4 +24,5 @@ class EmailParser
   
 end
 
-EmailParser.new('avi@test.com arel@test.com').parse 
+testing = EmailParser.new('avi@test.com arel@test.com')
+testing.parse 
